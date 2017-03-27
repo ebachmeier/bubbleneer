@@ -289,6 +289,8 @@
 			// Articles.
 				$main_articles.each(function() {
 
+					
+
 					var $this = $(this);
 
 					// Close.
