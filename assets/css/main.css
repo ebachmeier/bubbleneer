@@ -12,9 +12,11 @@
 		vertical-align: baseline;
 	}
 
+	/*
 	.game-clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 	.game-clear { display: inline-table; clear: both; }
-	/* Hides from IE-mac \*/ * html .clear { height: 1%; } .clear { display: block; } /* End hide from IE-mac */
+	* html .game-clear { height: 1%; } .game-clear { display: block; }
+	*/
 	.game-wrap { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 	.game-wrap canvas { margin: 0 0 10px 0; position: relative; z-index: 9; box-shadow: 0 10px 30px rgba(0,0,0,0.2); -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
 	.game-fullscreen { float: right; position: relative; z-index: 10; }
