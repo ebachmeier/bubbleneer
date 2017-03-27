@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+	    <script src="assets/js/UnityProgress.js"></script>
 	</head>
 	<body>
 
@@ -49,7 +51,12 @@
 						<!-- Play -->
 							<article id="play" class="demo">
 								<h2 class="major">Play Bubbleneer</h2>
-								<span class="image main"><img src="images/play.png" alt="" /></span>
+								<!-- <span class="image main"><img src="images/play.png" alt="" /></span> -->
+								<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+						        <br>
+						        <div class="logo"></div>
+						        <div class="fullscreen"><img src="images/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+						        <div class="title">Bubbleneer</div>
 							</article>
 
 						<!-- About -->
@@ -100,6 +107,20 @@
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+		<script type='text/javascript'>
+	  var Module = {
+	    TOTAL_MEMORY: 268435456,
+	    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+	    compatibilitycheck: null,
+	    backgroundColor: "#000000",
+	    splashStyle: "Light",
+	    dataUrl: "assets/Bubbleneer_Web.data",
+	    codeUrl: "assets/Bubbleneer_Web.js",
+	    asmUrl: "assets/Bubbleneer_Web.asm.js",
+	    memUrl: "assets/Bubbleneer_Web.mem",
+	  };
+	</script>
+	<script src="assets/js/UnityLoader.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
