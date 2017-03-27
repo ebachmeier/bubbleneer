@@ -1533,8 +1533,8 @@
 				}
 
 				.no-x {
-					background-image: none !important;
-					background-image: none !important;
+					background-image: url('') !important;
+					background-image: url('') !important;
 				}
 
 				#main article .close:hover:before {
