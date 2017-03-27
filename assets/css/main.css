@@ -22,6 +22,10 @@
 	.game-fullscreen { float: right; position: relative; z-index: 10; }
 	.game-title { height: 38px; line-height: 38px; padding: 0 10px; margin: 0 1px 0 0; text-align: center; color: #fff; font-size: 18px; position: relative; z-index: 10; }
 
+	#play .close {
+		display: none !important;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
