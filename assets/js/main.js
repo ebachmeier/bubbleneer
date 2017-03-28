@@ -316,11 +316,11 @@
 
 				});
 
+				/*
 				$window.on('keyup', function(event) {
 
 					switch (event.keyCode) {
 
-						/*
 						case 27:
 
 							// Article visible? Hide.
@@ -331,11 +331,11 @@
 
 						default:
 							break;
-							*/
 
 					}
 
 				});
+				*/
 
 				$window.on('hashchange', function(event) {
 
