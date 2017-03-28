@@ -320,6 +320,7 @@
 
 					switch (event.keyCode) {
 
+						/*
 						case 27:
 
 							// Article visible? Hide.
@@ -330,6 +331,7 @@
 
 						default:
 							break;
+							*/
 
 					}
 

@@ -288,7 +288,7 @@
 					$window.on('keydown', function(event) {
 
 						if (event.keyCode == 27)
-							$this._hide(event);
+							// $this._hide(event);
 
 					});
 
